@@ -22,9 +22,9 @@ no_index:
     - t
     - xt
 requires:
-  Mouse: 0.71
+  Mouse: 0.77
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/gfx/p5-MouseX-Foreign.git
-version: 0.002
+version: 0.003
