@@ -14,7 +14,7 @@ sub foo_base { shift->{foo_base} }
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 has foo => (
@@ -29,7 +29,7 @@ sub FOREIGNBUILDARGS {
 
 package Bar::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 has bar => (

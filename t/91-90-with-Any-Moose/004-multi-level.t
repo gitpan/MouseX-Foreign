@@ -14,7 +14,7 @@ sub foo { shift->{foo} }
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 has bar => (

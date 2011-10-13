@@ -12,12 +12,12 @@ sub new {
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 package Foo::Mouse2;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 package main;

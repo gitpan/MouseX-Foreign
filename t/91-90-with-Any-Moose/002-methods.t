@@ -12,7 +12,7 @@ sub baz { ref(shift) }
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 sub bar { 'Foo::Mouse' }

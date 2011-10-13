@@ -10,6 +10,10 @@ lib/MouseX/Foreign.pm
 lib/MouseX/Foreign/Meta/Role/Class.pm
 lib/MouseX/Foreign/Meta/Role/Method/Constructor.pm
 lib/MouseX/Foreign/Meta/Role/Method/Destructor.pm
+lib/MouseX/NonMoose.pm
+lib/MouseX/NonMoose/Meta/Role/Class.pm
+lib/MouseX/NonMoose/Meta/Role/Method/Constructor.pm
+lib/MouseX/NonMoose/Meta/Role/Method/Destructor.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
@@ -34,6 +38,20 @@ t/90-MooseX-NonMoose/024-nonmoose-moose-nonmoose.t
 t/90-MooseX-NonMoose/030-only-metaclass-trait.t
 t/90-MooseX-NonMoose/031-moose-exporter.t
 t/90-MooseX-NonMoose/040-destructor.t
+t/91-90-with-Any-Moose/001-basic.t
+t/91-90-with-Any-Moose/002-methods.t
+t/91-90-with-Any-Moose/003-attrs.t
+t/91-90-with-Any-Moose/004-multi-level.t
+t/91-90-with-Any-Moose/005-moose.t
+t/91-90-with-Any-Moose/006-disable.t
+t/91-90-with-Any-Moose/010-immutable.t
+t/91-90-with-Any-Moose/020-BUILD.t
+t/91-90-with-Any-Moose/021-BUILDARGS.t
+t/91-90-with-Any-Moose/023-FOREIGNBUILDARGS.t
+t/91-90-with-Any-Moose/024-nonmoose-moose-nonmoose.t
+t/91-90-with-Any-Moose/030-only-metaclass-trait.t
+t/91-90-with-Any-Moose/031-moose-exporter.t
+t/91-90-with-Any-Moose/040-destructor.t
 xt/pod.t
 xt/pod_synopsis.t
 xt/podspell.t

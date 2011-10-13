@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-use Test::More tests => 6;
+use Test::More tests => 4;
 
 package Foo;
 
@@ -16,19 +16,14 @@ sub foo {
     $self->{foo} = shift;
 }
 
-sub baz  { 'Foo' }
-sub quux { ref(shift) }
-
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign;
+use Any::Moose 'X::NonMoose';
 extends 'Foo';
 
 has bar => (
     is => 'rw',
 );
-
-__PACKAGE__->meta->make_immutable;
 
 package main;
 
@@ -39,5 +34,3 @@ $foo_moose->foo('BAZ');
 $foo_moose->bar('QUUX');
 is($foo_moose->foo, 'BAZ', 'foo set by accessor');
 is($foo_moose->bar, 'QUUX', 'bar set by accessor');
-is($foo_moose->baz, 'Foo', 'baz method');
-is($foo_moose->quux, 'Foo::Mouse', 'quux method');

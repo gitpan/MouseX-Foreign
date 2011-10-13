@@ -17,7 +17,7 @@ BEGIN {
         Mouse->init_meta(%options);
         return Mouse::Util::MetaRole::apply_metaclass_roles(
             for_class               => $options{for_class},
-            metaclass_roles         => ['MouseX::Foreign::Meta::Role::Class'],
+            metaclass_roles         => ['MouseX::NonMoose::Meta::Role::Class'],
         );
     }
 
@@ -31,9 +31,9 @@ BEGIN {
         Mouse->init_meta(%options);
         return Mouse::Util::MetaRole::apply_metaclass_roles(
             for_class               => $options{for_class},
-            metaclass_roles         => ['MouseX::Foreign::Meta::Role::Class'],
+            metaclass_roles         => ['MouseX::NonMoose::Meta::Role::Class'],
             constructor_class_roles =>
-                ['MouseX::Foreign::Meta::Role::Method::Constructor'],
+                ['MouseX::NonMoose::Meta::Role::Method::Constructor'],
         );
     }
 

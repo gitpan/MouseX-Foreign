@@ -12,7 +12,8 @@ sub new {
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Foreign qw(Foo);
+use Any::Moose 'X::NonMoose';
+extends 'Foo';
 
 package main;
 my $foo = Foo->new;
