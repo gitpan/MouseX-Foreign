@@ -3,14 +3,16 @@ abstract: 'Extends non-Mouse classes as well as Mouse classes'
 author:
   - 'Fuji, Goro (gfx) <gfuji(at)cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Any::Moose: 0.15
+  ExtUtils::MakeMaker: 6.59
   Test::Exception: 0
   Test::More: 0.88
   Test::Requires: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: 'Module::Install version 1.02'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,10 +25,9 @@ no_index:
     - t
     - xt
 requires:
-  Any::Moose: 0.15
   Mouse: 0.77
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/gfx/p5-MouseX-Foreign.git
-version: 0.007
+version: 0.008
