@@ -1,11 +1,9 @@
+Build.PL
 Changes
-inc/Module/Install.pm
-inc/Module/Install/AuthorTests.pm
-inc/Module/Install/Base.pm
-inc/Module/Install/Makefile.pm
-inc/Module/Install/Metadata.pm
-inc/Module/Install/Repository.pm
-inc/Module/Install/WriteAll.pm
+LICENSE
+META.json
+README.md
+cpanfile
 lib/MouseX/Foreign.pm
 lib/MouseX/Foreign/Meta/Role/Class.pm
 lib/MouseX/Foreign/Meta/Role/Method/Constructor.pm
@@ -14,16 +12,12 @@ lib/MouseX/NonMoose.pm
 lib/MouseX/NonMoose/Meta/Role/Class.pm
 lib/MouseX/NonMoose/Meta/Role/Method/Constructor.pm
 lib/MouseX/NonMoose/Meta/Role/Method/Destructor.pm
-Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
-META.yml
-README
 t/00_load.t
 t/01_basic.t
 t/02_moose.t
 t/03_mybigint.t
 t/04_multpile.t
+t/05_bless_new_args.t
 t/90-MooseX-NonMoose/001-basic.t
 t/90-MooseX-NonMoose/002-methods.t
 t/90-MooseX-NonMoose/003-attrs.t
@@ -54,4 +48,5 @@ t/91-90-with-Any-Moose/031-moose-exporter.t
 t/91-90-with-Any-Moose/040-destructor.t
 xt/pod.t
 xt/pod_synopsis.t
-xt/podspell.t
+META.yml
+MANIFEST
